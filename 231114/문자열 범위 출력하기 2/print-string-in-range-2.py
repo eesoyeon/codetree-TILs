@@ -2,10 +2,10 @@ string = input()
 n = int(input())
 
 leng = len(string)
+cnt = 0
 
-if n>leng:
-    for elem in string[::-1]:
-        print(elem, end="")
-else:
-    for elem in string[:leng-n-1:-1]:
-        print(elem, end="")
+for i in range(leng-1, -1, -1):
+    if cnt>=n:
+        break
+    print(string[i], end="")
+    cnt += 1
