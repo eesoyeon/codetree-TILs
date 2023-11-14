@@ -5,8 +5,12 @@ arr = [
 
 c = input()
 
+cnt = 0
 for elem in arr:
     if elem[-1] == c:
         print(elem)
-    else:
-        print('None')
+        cnt += 1
+
+
+if cnt==0:
+    print("None")
