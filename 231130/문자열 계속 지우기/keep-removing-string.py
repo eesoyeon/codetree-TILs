@@ -3,7 +3,7 @@ b = input()
 
 leng = len(b)
 index = a.find(b)
-while index>-1:
+while index>0:
     index = a.find(b)
     a = a[:index] + a[index+leng:]
 
