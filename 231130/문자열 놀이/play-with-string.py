@@ -1,5 +1,5 @@
 s, q = input().split()
-s = list(s)
+# s = list(s)
 q = int(q)
 
 
@@ -7,6 +7,7 @@ for _ in range(q):
     arr = list(input().split())
     arr[0] = int(arr[0])
     if arr[0] == 1:
+        s = list(s)
         a, b = int(arr[1]), int(arr[2])
         s[a-1], s[b-1] = s[b-1], s[a-1]
         print(''.join(s))
