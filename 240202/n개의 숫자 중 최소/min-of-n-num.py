@@ -1,10 +1,12 @@
+import sys
+
 n = int(input())
 arr = list(map(int, input().split()))
 
-min_val = arr[0]
-cnt = 1
+min_val = sys.maxsize
+cnt = 0
 
-for elem in arr[1:]:
+for elem in arr:
     if elem < min_val:
         min_val = elem
         cnt += 1
