@@ -1,12 +1,15 @@
 n = int(input())
 arr = list(map(int, input().split()))
 
-answer = []
-
+# answer = []
+max_profit = 0
 for i in range(n):
-    max_b = 1
-    for j in range(i, n):
+    for j in range(i+1, n):
         if arr[j] > arr[i]:
-            answer.append(arr[j] - arr[i])
+            profit = arr[j] - arr[i]
+            # answer.append(arr[j] - arr[i])
+            if profit > max_profit:
+                max_profit = profit
 
-print(max(answer) if answer else 0)
+print(max_profit)
+# print(max(answer) if answer else 0)
