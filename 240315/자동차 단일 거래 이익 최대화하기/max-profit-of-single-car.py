@@ -1,13 +1,12 @@
 n = int(input())
 arr = list(map(int, input().split()))
 
-benefit = 0
-max_b = 0
+answer = []
+
 for i in range(n):
+    max_b = 1
     for j in range(i, n):
         if arr[j] > arr[i]:
-            benefit = arr[j] - arr[i]
-    if benefit>max_b:
-        max_b = benefit
+            answer.append(arr[j] - arr[i])
 
-print(max_b if max_b!= 0 else 0)
+print(max(answer) if answer else 0)
