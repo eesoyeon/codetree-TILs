@@ -6,7 +6,10 @@ n = 0
 for i in range(100):
     A = A[-1] + A[:-1]
     if A == B:
-        print(i+1)
+        n = i+1
         break
-    else: continue
+
+if n<100:
+    print(n)
+else:
     print(-1)
