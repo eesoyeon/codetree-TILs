@@ -10,4 +10,4 @@ for key in dic:
     if dic[key] == 1:
         answer.append(key)
 
-print(max(answer) if answer!=[] else -1)
+print(max(answer) if answer else -1)
