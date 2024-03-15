@@ -6,8 +6,8 @@ def is_sequence(A, B):
     for i in range(n1-n2+1):
         if A[i:i+n2] == B:
             return True
-        else:
-            return False
+        # else:
+        #     return False
 
 if is_sequence:
     print("Yes")
