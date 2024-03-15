@@ -2,7 +2,7 @@ a = input()
 b = input()
 
 def find_index():
-    if a.index(b):
+    if b in a:
         return a.index(b)
     else:
         return -1
