@@ -18,4 +18,4 @@ end_of_day = days[diff%7]
 if days.index(end_of_day) < days.index(A):
     print(num_of_weeks-1)
 else:
-    print(num_of_days)
+    print(num_of_weeks)
