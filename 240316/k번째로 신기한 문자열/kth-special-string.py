@@ -5,7 +5,7 @@ ans = []
 
 words.sort()
 for word in words:
-    if T in word:
+    if word[:len(T)] == T:
         ans.append(word)
 
 print(ans[k-1])
