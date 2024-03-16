@@ -4,7 +4,7 @@ b = list(input())
 a.sort()
 b.sort()
 
-if len(a) != len(b):
-    print("No")
-elif a == b:
+if a == b and len(a) == len(b):
     print("Yes")
+else:
+    print("No")
