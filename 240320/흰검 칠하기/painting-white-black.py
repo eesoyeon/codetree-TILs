@@ -1,10 +1,5 @@
 n = int(input())
 
-tile = [
-    tuple(input().split())
-    for _ in range(n)
-]
-
 colored = [0] * 200001
 cur_dir = 10000
 
@@ -12,7 +7,8 @@ cur_dir = 10000
 white, black = [0] * 200001, [0] * 200001
 w, b, g = 0, 0, 0
 
-for x, location in tile:
+for _ in range(n):
+    x, location = input().split()
     x = int(x)
 
     if location == 'L':
