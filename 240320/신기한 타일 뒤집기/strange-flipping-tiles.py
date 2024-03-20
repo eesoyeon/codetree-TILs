@@ -15,10 +15,11 @@ for _ in range(n):
     else:
         for i in range(cur-x+1, cur+1):
             colored[i] = 2
-        cur -= x+1
+        cur -= x-1
 
 for i in range(len(colored)):
     if colored[i] == 1:
+        # print("b" , i)
         b += 1
     elif colored[i] == 2:
         w += 1
