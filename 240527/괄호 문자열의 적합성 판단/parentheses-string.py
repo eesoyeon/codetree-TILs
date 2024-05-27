@@ -13,4 +13,7 @@ for i in li:
         else:
             stack_li.pop()
 
+if stack_li!=[]:
+    answer = 'No'
+
 print(answer)
