@@ -1,15 +1,15 @@
 li = list(input())
 
 stack_li = []
-answer = 'Yes'
 
 for i in li:
     if i=='(':
         stack_li.append(i)
     else:
-        if stack_li==[]:
-            answer = 'No'
-        else:
+        if stack_li!=[]:
             stack_li.pop()
 
-print(answer)
+if stack_li==[]:
+    print("Yes")
+else:
+    print('No')
